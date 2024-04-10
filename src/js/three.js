@@ -1,15 +1,15 @@
 import * as THREE from 'three';
 // eslint-disable-next-line import/no-unresolved
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import fragment from '../shaders/fragment.glsl';
 import vertex from '../shaders/vertex.glsl';
-import BLUE from '/Colors/blue.png'
-import ORANGE from '/Colors/orange.png'
-import RED from '/Colors/red.png'
-import WHITE from '/Colors/white.png'
-import YELLOW from '/Colors/yellow.png'
-import GREEN from '/Colors/green.png'
+// import BLUE from '/Colors/blue.png'
+// import ORANGE from '/Colors/orange.png'
+// import RED from '/Colors/red.png'
+// import WHITE from '/Colors/white.png'
+// import YELLOW from '/Colors/yellow.png'
+// import GREEN from '/Colors/green.png'
 
 const device = {
   width: window.innerWidth,
