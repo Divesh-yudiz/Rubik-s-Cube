@@ -4,12 +4,12 @@ import * as THREE from 'three';
 
 import fragment from '../shaders/fragment.glsl';
 import vertex from '../shaders/vertex.glsl';
-import BLUE from '/blue.png'
-import ORANGE from '/orange.png'
-import RED from '/red.png'
-import WHITE from '/white.png'
-import YELLOW from '/yellow.png'
-import GREEN from '/green.png'
+import blue from '/Colors/blue.png';
+import orange from '/Colors/orange.png';
+import red from '/Colors/red.png';
+import white from '/Colors/white.png';
+import yellow from '/Colors/yellow.png';
+import green from '/Colors/green.png';
 
 const device = {
   width: window.innerWidth,
@@ -18,7 +18,7 @@ const device = {
 };
 
 // note that the order is important here!
-const colorNames = ["blue", "green", "white", "yellow", "red", "orange"];
+const colorNames = [blue, orange, red, white, yellow, green];
 const colorDirs = [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]];
 
 // assigns color codes to "color characters"
@@ -368,7 +368,7 @@ export default class Three {
     for (let colorName of colorNames) {
       const j = i;
       new THREE.TextureLoader().load(
-        `/Colors/${colorName}.png`,
+        colorName,
 
         // callback which is called once the texture is loaded
         texture => {
