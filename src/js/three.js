@@ -4,6 +4,12 @@ import * as THREE from 'three';
 
 import fragment from '../shaders/fragment.glsl';
 import vertex from '../shaders/vertex.glsl';
+import BLUE from '/blue.png'
+import ORANGE from '/orange.png'
+import RED from '/red.png'
+import WHITE from '/white.png'
+import YELLOW from '/yellow.png'
+import GREEN from '/green.png'
 
 const device = {
   width: window.innerWidth,
